@@ -1,12 +1,16 @@
-
+streamlit
 faiss-cpu
 groq
-langchain-groq
-PyPDF2
-langchain_google_genai
-langchain
-streamlit
-langchain_community
-python-dotenv
 pypdf
+python-dotenv
 nest_asyncio
+
+# Pin the LangChain ecosystem to the 0.3.x line. Left unpinned, Streamlit Cloud
+# installs langchain 1.x, which removed the legacy import paths this app relies
+# on (e.g. langchain.text_splitter) and breaks the build.
+langchain==0.3.27
+langchain-core==0.3.86
+langchain-community==0.3.27
+langchain-text-splitters==0.3.9
+langchain-groq==0.2.5
+langchain-google-genai==2.1.12
