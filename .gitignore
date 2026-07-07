@@ -49,8 +49,7 @@ wheels/
 ehthumbs.db
 Thumbs.db
 
-# Streamlit
-.streamlit/
+# Streamlit — keep secrets out, but let config.toml (theme) be committed for deploy
 .streamlit/secrets.toml
 
 # Logs
