@@ -10,15 +10,11 @@ NutritionChatBot/
 ├── app.py              # Main Streamlit application
 ├── requirements.txt    # Python dependencies
 ├── data/               # Data directory for PDF files
-│   └── nutritiondata.pdf  # Add your nutrition/diet PDF here (not included yet)
+│   └── nutritiondata.pdf  # Nutritional values summary used as the RAG source
 ├── .env                # Environment variables (create this file)
 ├── .gitignore          # Git ignore rules
 └── README.md           # This file
 ```
-
-## Status
-
-This is currently a scaffold: the app expects a PDF at `data/nutritiondata.pdf`, which is **not included yet**. Drop in a real nutrition/diet-plan PDF before running the app.
 
 ## Setup Instructions
 
